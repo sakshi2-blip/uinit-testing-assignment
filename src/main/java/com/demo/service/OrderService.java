@@ -21,7 +21,7 @@ public class OrderService {
     void placeOrder(Order order) {
         double priceWithTax = order.getPrice() * 20 / 100;
         order.setPriceWithTax(priceWithTax);
-        emailService.sendEmail(order);
+        emailService.sendEmail(order);// this method is throwing exception
         order.setCustomerNotified(true);
     }
 

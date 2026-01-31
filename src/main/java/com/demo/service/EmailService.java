@@ -22,6 +22,7 @@ public class EmailService {
         throw new RuntimeException("An Exception Occurred");
     }
 
+
     boolean sendEmail(Order order, String cc) {
         order.setCustomerNotified(true);
         return true;
